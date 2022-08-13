@@ -6,13 +6,16 @@ get_header(); ?>
     if (have_posts()) :
         while (have_posts()) : the_post(); ?>
             <h2><a href="<?= get_permalink() ?>"><?php the_field('titre'); ?></a></h2>
-            <?php
-            if (get_field('image')) : ?>
-                <img src="<?php the_field('image'); ?>" />
-            <?php endif; ?>
-
             <h3><?php the_field('sous_titre'); ?></h3>
-            <p><?php the_field('resume'); ?></p>
+
+            <div class="media__article">
+                <?php
+                if (get_field('image')) : ?>
+                    <img src="<?php the_field('image'); ?>" />
+                <?php endif; ?>
+                <p><?php the_field('resume'); ?></p>
+            </div>
+
         <?php endwhile; ?>
     <?php endif; ?>
 </section>
