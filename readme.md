@@ -11,7 +11,8 @@ style.css
 functions.php
 header.php
 front-page.php
-single.php
+404.php
+category-cours.php
 footer.php
 screenshot.png
 readme.md
