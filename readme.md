@@ -2,6 +2,8 @@
 ## thème Wordpress
 ### Contient  commits
 
+
+
 > Le thème conient les fichiers suivants:
 index html
 index.php
@@ -15,7 +17,7 @@ screenshot.png
 readme.md
 > Le thème contient les dossier suivants:
 sass: contient 5 dossiers
-index_files
+
 
 
 Pour plus d'information sur la conception de thème
