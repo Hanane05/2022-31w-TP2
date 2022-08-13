@@ -25,12 +25,6 @@
                     <a href="<?= esc_url(home_url('/')) ?>"><?= bloginfo('name'); ?></a>
                 </h1>
             </section>
-            <nav class="site__navigation">
-                <a href="#">Accueil</a>
-                <a href="#">À propos</a>
-                <a href="#">Galerie</a>
-                <a href="#">Contact</a>
-            </nav>
         </header>
         <section class="site__sidebar">
             <h3>Menu</h3>

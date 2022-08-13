@@ -463,8 +463,7 @@ object {
 }
 
 img {
-  height: auto;
-  max-width: 100%;
+  width: 400px;
 }
 
 figure {
@@ -635,7 +634,7 @@ textarea {
 
 .site__header {
   grid-area: header;
-  background-color: #000a8f;
+  background-color: #0173bc;
   position: fixed;
   top: 0;
   z-index: 999999;
@@ -653,13 +652,6 @@ textarea {
   text-decoration: none;
   color: white !important;
 }
-.site__header .site__navigation {
-  display: flex;
-  gap: 1rem;
-}
-.site__header .site__navigation a:hover {
-  color: rgb(199, 199, 247);
-}
 
 .site__main {
   grid-area: main;
@@ -669,15 +661,36 @@ textarea {
   font-size: 1.2rem;
   line-height: 1.6rem;
   letter-spacing: 0.035rem;
+  max-width: 800px;
 }
 .site__main h1 {
   font-size: 2.5rem;
 }
 .site__main h2 {
-  margin-top: 3rem;
+  margin-top: 5rem;
+  font-size: 1.7rem;
+}
+.site__main h2 a {
+  text-decoration: none;
+}
+.site__main h3 {
   font-size: 1.3rem;
-  color: #404040;
-  text-decoration: underline;
+  color: grey;
+}
+.site__main .media__article {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .site__main .media__article {
+    flex-flow: row;
+    gap: 30px;
+  }
+}
+.site__main img {
+  max-width: 400px;
+  display: block;
 }
 .site__main a {
   color: initial;

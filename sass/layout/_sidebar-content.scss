@@ -26,7 +26,7 @@
 
 .site__header {
 	grid-area: header;
-    background-color: lighten($color__background-zonegrid, 20%);
+    background-color: #0173bc;
     position: fixed;
 	top: 0;
 	z-index: 999999;
@@ -43,15 +43,6 @@
 		color: white !important;
 	}
 
-	.site__navigation{
-		display: flex;
-		gap: 1rem;
-	}
-	
-	.site__navigation a:hover{
-		color: rgb(199, 199, 247);
-
-	}
 }
 
 .site__main {
@@ -61,15 +52,40 @@
 		font-size: 1.2rem;
 		line-height: 1.6rem;
 		letter-spacing: .035rem;
+		max-width: 800px;
 	}
 	h1{
 		font-size: 2.5rem;
 	}
 	h2{
-		margin-top: 3rem;
+		margin-top: 5rem;
+    font-size: 1.7rem;
+    
+		a{
+			text-decoration:none;
+		}
+	}
+
+	h3{
     font-size: 1.3rem;
-    color: $color__text-main;
-    text-decoration: underline;
+	color: grey;
+
+	}
+
+	.media__article{
+		display: flex;
+		flex-flow: column;
+		gap : 10px;
+
+		@media screen and (min-width: 1200px) {
+			flex-flow: row;
+			gap : 30px;
+		}
+	}
+
+	img{
+		max-width: 400px;
+		display: block;
 	}
 	a{
 		color: initial;
