@@ -22,7 +22,7 @@
             $description = get_field('description');
 
             echo "<p class='annonce__description'>" . $description . "</p>";
-            echo "<p class='annonce__lieu'> Le lieu : " . $endroit . "</p>";
+            echo "<p class='annonce__endroit'> Le lieu : " . $endroit . "</p>";
             echo "<p class='annonce__date'> La date : " . $date . "</p>";
             echo "<p class='annonce__heure'> L'heure : " . $heure . "</p>";
             echo "<p class='annonce__organisateur'> Le responsable de l'évènement : " . $organisateur . "</p>";
