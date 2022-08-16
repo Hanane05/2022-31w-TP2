@@ -29,7 +29,7 @@
         <section class="site__sidebar">
             <h3>Menu</h3>
             <?php wp_nav_menu(array(
-                'menu' => '',
+                'menu' => 'menu sidebar',
                 'container' => 'nav',
                 'container_class' => 'menu__sidebar',
                 'menu_class' => 'menu__sidebar__ul'
