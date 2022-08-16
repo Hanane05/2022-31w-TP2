@@ -26,7 +26,7 @@ function mon_31w_setup()
     register_nav_menus(array(
         'sidebar_menu' => __('Sidebar Menu', 'mon_31w'),
         'footer_menu'  => __('Footer Menu', 'mon_31w'),
-        'evenement_menu' => __('Evenement Menu', 'mon_31w')
+        'accueil_menu' => __('Accueil Menu', 'mon_31w')
     ));
 }
 
