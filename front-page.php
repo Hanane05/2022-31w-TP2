@@ -18,11 +18,12 @@ get_header(); ?>
 
         <?php endwhile; ?>
     <?php endif; ?>
-</section>
-<?php
-/* -------------------------------------- menu évènements */
-wp_nav_menu(array(
-    'menu' => 'accueil',
-    'container' => 'nav'
-)); ?>
+    <?php
+    /* -------------------------------------- menu évènements */
+    wp_nav_menu(array(
+        'menu' => 'accueil',
+        'container' => 'nav'
+    )); ?>
+</section> <!-- fin .site__main -->
+
 <?php get_footer(); ?>
