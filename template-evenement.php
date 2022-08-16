@@ -4,7 +4,7 @@
  * Template name: Évènement
  */
 ?>
-<?php get__header() ?>
+<?php get_header() ?>
 
 <main class="site__main">
 
