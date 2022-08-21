@@ -11,12 +11,12 @@
     transition : transform .5s;
     @media screen and (min-width : 700px){
         position : static;
+        padding-top: 0;
         width: 100%;
         transform: translateX(0vw);
     }
 
 } 
-
 .menu__sidebar__ul{
    list-style-type: none;
    margin: 0;
