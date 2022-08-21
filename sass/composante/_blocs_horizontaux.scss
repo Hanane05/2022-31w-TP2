@@ -6,14 +6,20 @@
 
 
 .blocs__horizontaux article {
+    transition: all 300ms ease-in;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    border: 1px solid #6196d8;
+    border: 1px solid #c2ddff;
     border-radius: 5px;
     max-width: 300px;
     background-color: #f4f7fc;
+    &:hover{
+        background-color: darken( #f4f7fc, 20%);
+    }
+    >*+*+*{
+        margin-top: 10px;
+    }
     @media screen and (min-width : 700px){
         flex-basis : 22%;
     }
@@ -21,9 +27,20 @@
     img{
         height: 275px;
     }
+    h3{
+        margin: 0;
+        overflow: hidden;
+        height: 25px;
+        white-space: nowrap;
+    }
     h2{
-        margin: 1rem;
-        font-size: 1.25rem;
+        white-space: nowrap;
+    overflow: hidden;
+    font-size: 1.25rem;
+    margin: 0;
+    display: block;
+    width: 100%;
+    padding: 10px;
         
         a{
             color: #645954;
