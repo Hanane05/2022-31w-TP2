@@ -428,13 +428,8 @@ hr {
   margin-bottom: 1.5em;
 }
 
-ul,
-ol {
-  margin: 0 0 1.5em 3em;
-}
-
 ul {
-  list-style: disc;
+  list-style: none;
 }
 
 ol {
@@ -495,7 +490,7 @@ a:hover, a:active {
 }
 
 header a:visited {
-  color: rgb(43, 46, 45);
+  color: #9bb4ee;
 }
 header a:hover, header a:focus, header a:active {
   color: #191970;
@@ -599,6 +594,7 @@ textarea {
 }
 .menu__sidebar__ul .menu-item {
   margin: 1rem 0;
+  border-bottom: 1px solid #e2e2e2;
 }
 .menu__sidebar__ul .menu-item a {
   text-decoration: none;
@@ -608,7 +604,7 @@ textarea {
   line-height: 1.5;
 }
 .menu__sidebar__ul .menu-item a:hover {
-  background-color: #f5f6ff;
+  background-color: #d8f3f4;
 }
 
 /*-----------------------------------
@@ -617,40 +613,38 @@ textarea {
 --------------------------------------------------------------*/
 .site {
   display: grid;
-  gap: 32px;
   grid-template-columns: auto;
   grid-template-areas: "header" "sidebar" "main" "footer";
 }
 @media screen and (min-width: 700px) {
   .site {
-    grid-template-areas: "header header" "sidebar main" "sidebar main" "footer footer";
+    grid-template-areas: "header header" "sidebar main" "footer footer";
     grid-template-columns: 300px auto;
   }
 }
 
 .site__header, .site__sidebar, .site__main, .site__footer {
-  padding: 1vh 6vw;
+  padding: 1vh 3vw;
 }
 
 .site__header {
   grid-area: header;
   background-color: #0173bc;
-  position: fixed;
+  position: sticky;
   top: 0;
-  z-index: 999999;
   width: 100%;
+}
+.site__header h1 {
+  font-size: 25px;
+}
+.site__header a {
+  text-decoration: none;
+  color: white !important;
 }
 @media screen and (min-width: 700px) {
   .site__header {
     position: static;
   }
-}
-.site__header h2 {
-  color: orangered;
-}
-.site__header a {
-  text-decoration: none;
-  color: white !important;
 }
 
 .site__main {
@@ -670,41 +664,35 @@ textarea {
   margin-top: 5rem;
   font-size: 1.7rem;
 }
-.site__main h2 a {
-  text-decoration: none;
-}
 .site__main h3 {
   font-size: 1.3rem;
   color: grey;
 }
-.site__main .media__article {
+.site__main .image__article {
   display: flex;
   flex-flow: column;
-  gap: 10px;
 }
 @media screen and (min-width: 1200px) {
-  .site__main .media__article {
+  .site__main .image__article {
     flex-flow: row;
-    gap: 30px;
   }
 }
 .site__main img {
-  max-width: 400px;
   display: block;
 }
 .site__main a {
   color: initial;
+  text-decoration: none;
 }
 
 .site__sidebar {
   grid-area: sidebar;
   background-color: white;
-  margin-top: 4rem;
 }
 @media screen and (min-width: 700px) {
   .site__sidebar {
     margin-top: 0;
-    padding: 1rem 1rem 1rem 4rem;
+    padding: 0 1rem;
   }
 }
 .site__sidebar h3 {
@@ -713,10 +701,10 @@ textarea {
 
 .site__footer {
   grid-area: footer;
-  background-color: #000543;
+  background-color: #68babe;
   text-align: center;
 }
 .site__footer h2 {
-  color: rgb(207, 206, 207);
+  color: #fff;
   font-size: 1.3rem;
 }/*# sourceMappingURL=style.css.map */
