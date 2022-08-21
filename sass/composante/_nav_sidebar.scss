@@ -1,3 +1,16 @@
+#burger {
+    display : block;
+    position : absolute;
+    top:50px;
+    left : 0;
+    z-index : 100;
+    transform: rotate(0deg);
+    transition: transform .5s;
+    @media screen and (min-width : 700px){
+        display : none;
+    }    
+
+}
 
 .menu__sidebar {
     position :absolute;
@@ -11,12 +24,25 @@
     transition : transform .5s;
     @media screen and (min-width : 700px){
         position : static;
-        padding-top: 0;
+        padding-top: 0 ;
         width: 100%;
         transform: translateX(0vw);
     }
 
 } 
+
+#chk-burger {
+    display : none;
+}
+
+#chk-burger:checked ~ .menu__sidebar {
+    transform : translateX(0);
+}
+
+#chk-burger:checked ~ #burger {
+    transform : rotate(90deg);
+}
+
 .menu__sidebar__ul{
    list-style-type: none;
    margin: 0;

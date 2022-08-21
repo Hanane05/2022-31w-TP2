@@ -587,6 +587,21 @@ textarea {
 /*--------------------------------------------------------------
 # Composante
 --------------------------------------------------------------*/
+#burger {
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  z-index: 100;
+  transform: rotate(0deg);
+  transition: transform 0.5s;
+}
+@media screen and (min-width: 700px) {
+  #burger {
+    display: none;
+  }
+}
+
 .menu__sidebar {
   position: absolute;
   padding-top: 75px;
@@ -605,6 +620,18 @@ textarea {
     width: 100%;
     transform: translateX(0vw);
   }
+}
+
+#chk-burger {
+  display: none;
+}
+
+#chk-burger:checked ~ .menu__sidebar {
+  transform: translateX(0);
+}
+
+#chk-burger:checked ~ #burger {
+  transform: rotate(90deg);
 }
 
 .menu__sidebar__ul {
