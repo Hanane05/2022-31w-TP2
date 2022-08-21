@@ -1,0 +1,39 @@
+.blocs__horizontaux {
+    display : grid;
+    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+
+
+.blocs__horizontaux article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #6196d8;
+    border-radius: 5px;
+    max-width: 300px;
+    background-color: #f4f7fc;
+    @media screen and (min-width : 700px){
+        flex-basis : 22%;
+    }
+
+    img{
+        height: 275px;
+    }
+    h2{
+        margin: 1rem;
+        font-size: 1.25rem;
+        
+        a{
+            color: #645954;
+            text-transform: lowercase;
+        }
+    }
+    p{
+        font-size: 18px;
+        padding: 15px;
+        margin: 0;
+        color: gray;
+    }
+}

@@ -459,6 +459,8 @@ object {
 
 img {
   width: 400px;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 figure {
@@ -595,21 +597,26 @@ textarea {
   z-index: 100;
   transform: rotate(0deg);
   transition: transform 0.5s;
+  background-color: white;
 }
 @media screen and (min-width: 700px) {
   #burger {
     display: none;
   }
 }
+#burger img {
+  width: 100%;
+  display: block;
+}
 
 .menu__sidebar {
   position: absolute;
-  padding-top: 75px;
+  padding: 75px 25px 25px 25px;
   width: 100vw;
   z-index: 99;
   top: 0;
   left: 0;
-  background-color: #fff;
+  background-color: #f4fbff;
   transform: translateX(-100vw);
   transition: transform 0.5s;
 }
@@ -640,10 +647,10 @@ textarea {
   padding: 0;
 }
 .menu__sidebar__ul .menu-item {
-  margin: 1rem 0;
-  border-bottom: 1px solid #e2e2e2;
+  padding: 10px 5px;
 }
 .menu__sidebar__ul .menu-item a {
+  display: block;
   text-decoration: none;
   color: #404040;
   font-size: 1.1rem;
@@ -652,6 +659,74 @@ textarea {
 }
 .menu__sidebar__ul .menu-item a:hover {
   background-color: #d8f3f4;
+}
+.menu__sidebar__ul .menu-item + .menu-item {
+  border-top: 1px solid #e2e2e2;
+}
+
+.blocs__horizontaux {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+
+.blocs__horizontaux article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #6196d8;
+  border-radius: 5px;
+  max-width: 300px;
+  background-color: #f4f7fc;
+}
+@media screen and (min-width: 700px) {
+  .blocs__horizontaux article {
+    flex-basis: 22%;
+  }
+}
+.blocs__horizontaux article img {
+  height: 275px;
+}
+.blocs__horizontaux article h2 {
+  margin: 1rem;
+  font-size: 1.25rem;
+}
+.blocs__horizontaux article h2 a {
+  color: #645954;
+  text-transform: lowercase;
+}
+.blocs__horizontaux article p {
+  font-size: 18px;
+  padding: 15px;
+  margin: 0;
+  color: gray;
+}
+
+/**
+* block menu de la page d'accueil
+*/
+.menu-accueil-container {
+  margin-top: 50px;
+}
+
+.menu-accueil-container .menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu-accueil-container .menu .menu-item {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #aaa;
+  width: 30%;
+  padding: 1.5rem;
+}
+
+.menu-accueil-container .menu .menu-item a {
+  text-decoration: none;
 }
 
 /*-----------------------------------

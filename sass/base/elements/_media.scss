@@ -7,7 +7,8 @@ object {
 
 img {
 	width: 400px; // Make sure images are scaled correctly.
-	// max-width: 100%; // Adhere to container width.
+	max-width: 100%; // Adhere to container width.
+	object-fit: cover;
 }
 
 figure {
