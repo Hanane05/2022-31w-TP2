@@ -30,7 +30,8 @@
             echo "<p class='annonce__le_type_de_formation'> Le type de formation : " . $type . "</p>";
             echo "<p class='annonce__date_de_debut_de_latelier'> La date de début : " . $date_debut . "</p>";
             echo "<p class='annonce__duree'> La durée : " . $duree . "</p>";
-            echo "<p class='annonce__heure'> L'heure :" . $nombre_heures . "</p>";
+            echo "<p class='annonce__heure'> L'heure :" . $heure . "</p>";
+            echo "<p class='annonce__nombre_dheures_par_seance'> L'heure :" . $nombre_heures . "</p>";
             echo "<p class='annonce__niveau_de_difficulte'> Niveau de difficulté : " . $niveau . "</p>";
             echo "<p class='annonce__lieu_ou_se_deroulera_latelier'> Lieu ou se déroulera l'atelier :" . $lieu . "</p>";
             echo "<p class='annonce__niveau_de_difficulte'> Le prix d'atelier : " . $prix . "</p>";

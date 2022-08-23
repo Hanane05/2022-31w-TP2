@@ -29,7 +29,13 @@ get_header(); ?>
         'menu' => 'accueil',
         'container' => 'nav'
     )); ?>
-
+<h2>Atelier</h2>
+    <?php
+    /* -------------------------------------- menu atelier */
+    wp_nav_menu(array(
+        'menu' => 'atelier',
+        'container' => 'nav'
+    )); ?>
 
 </section> <!-- fin .site__main -->
 
