@@ -21,12 +21,16 @@ get_header(); ?>
             <?php endwhile; ?>
         <?php endif; ?>
     </div>
+
+    <h2>Événement</h2>
     <?php
     /* -------------------------------------- menu évènements */
     wp_nav_menu(array(
         'menu' => 'accueil',
         'container' => 'nav'
     )); ?>
+
+
 </section> <!-- fin .site__main -->
 
 <?php get_footer(); ?>
