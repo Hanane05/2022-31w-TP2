@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*! 
-Theme Name: 31W-tp1
+Theme Name: 31W-epreuve finale
 Author: Hanane Boukhalfa
-Author URI: https://github.com/Hanane05/2022-31w-TP2
+Author URI: https://github.com/Hanane05/2022-31w-TP2/epreuve_finale
 Description: Thème de base pour le cours de 31W
 Version: 1.0.0
 Tested up to: 5.4
@@ -723,11 +723,11 @@ textarea {
 /**
 * block menu de la page d'accueil
 */
-.menu-accueil-container {
+.menu-accueil-container .menu-atelier-container {
   margin-top: 50px;
 }
 
-.menu-accueil-container .menu {
+.menu-accueil-container .menu .menu-atelier-container .menu {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -735,7 +735,7 @@ textarea {
   padding: 1rem;
 }
 
-.menu-accueil-container .menu .menu-item {
+.menu-accueil-container .menu .menu-item .menu-atelier-container .menu .menu-item {
   list-style-type: none;
   margin: 0;
   border: 1px solid #aaa;
@@ -744,11 +744,11 @@ textarea {
   border-radius: 1rem;
   background-color: #56b2b6;
 }
-.menu-accueil-container .menu .menu-item:hover {
+.menu-accueil-container .menu .menu-item .menu-atelier-container .menu .menu-item:hover {
   background-color: #7ac2c5;
 }
 
-.menu-accueil-container .menu .menu-item a {
+.menu-accueil-container .menu .menu-item a .menu-atelier-container .menu .menu-item a {
   text-decoration: none;
 }
 
