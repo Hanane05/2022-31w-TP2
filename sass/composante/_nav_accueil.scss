@@ -3,11 +3,11 @@
 */
 
 
-.menu-accueil-container{
+.menu-accueil-container .menu-atelier-container{
     margin-top: 50px;
 }
 
-.menu-accueil-container .menu{
+.menu-accueil-container .menu .menu-atelier-container .menu{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -15,7 +15,7 @@
     padding: 1rem;
 }
 
-.menu-accueil-container .menu .menu-item {
+.menu-accueil-container .menu .menu-item  .menu-atelier-container .menu .menu-item{
     list-style-type: none;
     margin: 0;
     border: 1px solid #aaa;
@@ -28,6 +28,6 @@
     }
 }
 
-.menu-accueil-container .menu .menu-item a {
+.menu-accueil-container .menu .menu-item a  .menu-atelier-container .menu .menu-item a{
     text-decoration: none;
 }
