@@ -15,17 +15,25 @@
             <h1><?= get_the_title() ?></h1>
             <?php the_content(); ?>
             <?php
-            $endroit = get_field('endroit');
-            $date = get_field('date');
+            $animateur = get_field('animateur');
+            $type = get_field('le_type_de_formation');
+            $date_debut= get_field('date_de_debut_de_latelier');
+            $duree = get_field('duree');
             $heure = get_field('heure');
-            $organisateur = get_field('organisateur');
-            $description = get_field('description');
+            $nombre_heures = get_field('nombre_dheures_par_seance');
+            $niveau = get_field('niveau_de_difficulte');
+            $lieu = get_field('lieu_ou_se_deroulera_latelier');
+            $prix = get_field('le_prix_datelier');
 
-            echo "<p class='annonce__description'>" . $description . "</p>";
-            echo "<p class='annonce__endroit'> Le lieu : " . $endroit . "</p>";
-            echo "<p class='annonce__date'> La date : " . $date . "</p>";
-            echo "<p class='annonce__heure'> L'heure : " . $heure . "</p>";
-            echo "<p class='annonce__organisateur'> Le responsable de l'évènement : " . $organisateur . "</p>";
+
+            echo "<p class='annonce__animateur'> L'animateur de l'atelier :" . $animateur . "</p>";
+            echo "<p class='annonce__le_type_de_formation'> Le type de formation : " . $type . "</p>";
+            echo "<p class='annonce__date_de_debut_de_latelier'> La date de début : " . $date_debut . "</p>";
+            echo "<p class='annonce__duree'> La durée : " . $duree . "</p>";
+            echo "<p class='annonce__heure'> L'heure :" . $nombre_heures . "</p>";
+            echo "<p class='annonce__niveau_de_difficulte'> Niveau de difficulté : " . $niveau . "</p>";
+            echo "<p class='annonce__lieu_ou_se_deroulera_latelier'> Lieu ou se déroulera l'atelier :" . $lieu . "</p>";
+            echo "<p class='annonce__niveau_de_difficulte'> Le prix d'atelier : " . $prix . "</p>";
 
             $image = get_field('image');
             if (!empty($image)) : ?>
