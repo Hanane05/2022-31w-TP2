@@ -726,7 +726,6 @@ textarea {
 .menu-accueil-container {
   margin-top: 50px;
 }
-
 .menu-accueil-container .menu {
   display: flex;
   justify-content: center;
@@ -739,7 +738,6 @@ textarea {
     flex-direction: row;
   }
 }
-
 .menu-accueil-container .menu .menu-item {
   list-style-type: none;
   margin: 0;
@@ -753,7 +751,6 @@ textarea {
 .menu-accueil-container .menu .menu-item:hover {
   background-color: #7ac2c5;
 }
-
 .menu-accueil-container .menu .menu-item a {
   color: white;
   font-weight: 500;
