@@ -8,18 +8,24 @@
 }
 
 .menu-accueil-container .menu{
-    display : flex;
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .menu-accueil-container .menu .menu-item {
     list-style-type: none;
-    margin : 0;
-    padding : 0;
-    border : 1px solid #aaa;
+    margin: 0;
+    border: 1px solid #aaa;
     width: 30%;
-    padding : 1.5rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: #56b2b6;
+    &:hover{
+        background-color: lighten(#56b2b6, 10%);
+    }
 }
 
 .menu-accueil-container .menu .menu-item a {
