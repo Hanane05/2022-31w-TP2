@@ -769,6 +769,18 @@ textarea {
   color: rgb(22, 9, 174);
 }
 
+.grille__cours {
+  display: grid;
+  background-color: aliceblue;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 450px));
+}
+.grille__cours input[type=radio] {
+  display: none;
+}
+.grille__cours .boite-modale__article {
+  display: none;
+}
+
 /*-----------------------------------
 
 # Layout

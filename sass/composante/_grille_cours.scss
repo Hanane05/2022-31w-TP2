@@ -1,0 +1,13 @@
+.grille__cours{
+    display: grid;
+    background-color: aliceblue;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 450px));
+
+    input[type=radio]{
+        display: none;
+    }
+
+    .boite-modale__article{
+        display: none;
+    }
+}
