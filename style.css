@@ -779,7 +779,7 @@ textarea {
   top: 0;
   width: 100%;
 }
-.site__header h1 {
+.site__header .site__branding h1 {
   font-size: 25px;
 }
 .site__header a {
