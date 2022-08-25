@@ -781,6 +781,7 @@ textarea {
 }
 .site__header .site__branding h1 {
   font-size: 25px;
+  text-align: center;
 }
 .site__header a {
   text-decoration: none;
