@@ -24,7 +24,7 @@ get_header(); ?>
 
     <h2>Le département TIM</h2>
     <?php
-    /* -------------------------------------- menu évènements */
+    /* -------------------------------------- menu départements */
     wp_nav_menu(array(
         'menu' => 'departement',
         'container' => 'nav'
