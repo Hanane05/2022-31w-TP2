@@ -13,19 +13,22 @@ $nombreHeures = get_field("nombre_dheures");
             <?= substr($titre, 7) ?>
         </a>
     </h2>
-    <?php the_post_thumbnail("thumbnail") ?>
     <p>
         <?php
-        echo wp_trim_words($descCours, 20, '...<label class="button" for="modal' . $idArticle . '">'
+        echo wp_trim_words($descCours, 20, '...<label class="button" for="boite-modale' . $idArticle . '">'
             . substr($titre, 0, 8)
             . "</label>");
         ?>
 
     </p>
 
-    <input type="radio" name="modal" class="modal__checkbox" id="modal<?= $idArticle; ?>">
-    <article class="modal__article">
-        <label for="fermer" class="modal__fermer"></label>
+    <footer>
+        departement: <?php echo $departement; ?>
+    </footer>
+
+    <input type="radio" name="boite-modale" class="boite-modale__checkbox" id="boite-modale<?= $idArticle; ?>">
+    <article class="boite-modale__article">
+        <label for="fermer" class="boite-modale__fermer"></label>
         <div>
             <p>
                 <?= $descCours ?>
@@ -39,7 +42,4 @@ $nombreHeures = get_field("nombre_dheures");
         </div>
     </article>
 
-    <footer>
-        departement: <?php echo $departement; ?>
-    </footer>
 </div>

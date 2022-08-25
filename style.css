@@ -723,10 +723,10 @@ textarea {
 /**
 * block menu de la page d'accueil
 */
-.menu-accueil-container {
+.menu-accueil-container, .menu-departement-container {
   margin-top: 50px;
 }
-.menu-accueil-container .menu {
+.menu-accueil-container .menu, .menu-departement-container .menu {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -734,11 +734,11 @@ textarea {
   padding: 1rem;
 }
 @media screen and (min-width: 1100px) {
-  .menu-accueil-container .menu {
+  .menu-accueil-container .menu, .menu-departement-container .menu {
     flex-direction: row;
   }
 }
-.menu-accueil-container .menu .menu-item {
+.menu-accueil-container .menu .menu-item, .menu-departement-container .menu .menu-item {
   list-style-type: none;
   margin: 0;
   border: 1px solid #aaa;
@@ -748,15 +748,25 @@ textarea {
   border-radius: 1rem;
   background-color: #56b2b6;
 }
-.menu-accueil-container .menu .menu-item:hover {
+.menu-accueil-container .menu .menu-item:hover, .menu-departement-container .menu .menu-item:hover {
   background-color: #7ac2c5;
 }
-.menu-accueil-container .menu .menu-item:hover a {
+.menu-accueil-container .menu .menu-item:hover a, .menu-departement-container .menu .menu-item:hover a {
   color: rgb(22, 9, 174);
 }
-.menu-accueil-container .menu .menu-item a {
+.menu-accueil-container .menu .menu-item a, .menu-departement-container .menu .menu-item a {
   color: white;
   font-weight: 500;
+}
+
+.menu-departement-container .menu .menu-item {
+  background-color: #4b65cd;
+}
+.menu-departement-container .menu .menu-item:hover {
+  background-color: #7387d8;
+}
+.menu-departement-container .menu .menu-item:hover a {
+  color: rgb(22, 9, 174);
 }
 
 /*-----------------------------------

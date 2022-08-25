@@ -3,7 +3,7 @@
 */
 
 
-.menu-accueil-container{
+.menu-accueil-container, .menu-departement-container{
     margin-top: 50px;
 
  .menu{
@@ -43,5 +43,22 @@
     }
 
 }
+}
+
+.menu-departement-container{
+
+    .menu{
+            .menu-item {
+            background-color: #4b65cd;
+        
+            &:hover{
+                background-color: lighten(#4b65cd, 10%);
+    
+                a {
+                    color: rgb(22, 9, 174);
+                }
+            }
+        }
+    }
 
 }
