@@ -751,6 +751,9 @@ textarea {
 .menu-accueil-container .menu .menu-item:hover {
   background-color: #7ac2c5;
 }
+.menu-accueil-container .menu .menu-item:hover a {
+  color: rgb(22, 9, 174);
+}
 .menu-accueil-container .menu .menu-item a {
   color: white;
   font-weight: 500;
