@@ -15,12 +15,11 @@ $nombreHeures = get_field("nombre_dheures");
     </h2>
     <p>
         <?php
-        echo wp_trim_words($descCours, 20, '...<label class="button" for="boite-modale' . $idArticle . '">'
-            . substr($titre, 0, 8)
-            . "</label>");
+        echo wp_trim_words($descCours, 20, '...');
         ?>
-
     </p>
+
+    <label class="button" for="boite-modale<?= $idArticle ?>"><?= substr($titre, 0, 8) ?></label>
 
     <footer>
         departement: <?php echo $departement; ?>

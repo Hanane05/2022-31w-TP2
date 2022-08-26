@@ -771,11 +771,34 @@ textarea {
 
 .grille__cours {
   display: grid;
-  background-color: aliceblue;
   grid-template-columns: repeat(auto-fit, minmax(300px, 450px));
+  gap: 40px;
 }
 .grille__cours input[type=radio] {
   display: none;
+}
+.grille__cours > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #dcfbff;
+  box-shadow: 0 0 6px 4px rgb(245, 246, 248);
+  border-radius: 10px;
+  padding: 15px;
+}
+.grille__cours > div > h2 {
+  margin: 0;
+}
+.grille__cours > div .button {
+  display: block;
+  margin: auto;
+  width: max-content;
+  background-color: #4747b6;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid #4d48b7;
 }
 .grille__cours .boite-modale__article {
   display: none;
