@@ -852,12 +852,21 @@ textarea {
   pointer-events: all;
 }
 
+.not-found__page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /*-----------------------------------
 
 # Layout
 --------------------------------------------------------------*/
 .site {
   display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
   grid-template-columns: auto;
   grid-template-areas: "header" "sidebar" "main" "footer";
 }

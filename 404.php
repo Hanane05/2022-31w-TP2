@@ -9,8 +9,11 @@
  * @package mon_31w
  */
 get_header(); ?>
-<h1>ERREUR 404</h1>
-<p>Page introuvable :(</p>
 
+<section class="not-found__page">
 
+    <h1>ERREUR 404</h1>
+
+    <p>Page introuvable :(</p>
+</section>
 <?php get_footer(); ?>
