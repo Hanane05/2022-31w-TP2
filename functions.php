@@ -77,3 +77,4 @@ function mon_31w_pre_get_posts_accueil($query)
     }
 }
 add_action('pre_get_posts', 'mon_31w_pre_get_posts_accueil');
+add_theme_support('post-thumbnails');
