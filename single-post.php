@@ -1,7 +1,7 @@
 <?php
 get_header(); ?>
 <section class="site__main">
-    <h1>Mon modèle Wordpress pour Exercice #04</h1>
+    <h1>Mon modèle Wordpress pour TP2</h1>
     <?php
     if (have_posts()) :
         while (have_posts()) : the_post(); ?>

@@ -27,8 +27,15 @@ $nombreHeures = get_field("nombre_dheures");
 
     <input type="radio" name="boite-modale" class="boite-modale__checkbox" id="boite-modale<?= $idArticle; ?>">
     <article class="boite-modale__article">
-        <label for="fermer" class="boite-modale__fermer"></label>
+        <label for="boite-modale-fermer" class="boite-modale__fermer"></label>
         <div>
+
+            <h2>
+                <a href="<?php echo get_permalink(); ?>">
+                    <?= substr($titre, 7) ?>
+                </a>
+            </h2>
+
             <p>
                 <?= $descCours ?>
             </p>
@@ -40,5 +47,6 @@ $nombreHeures = get_field("nombre_dheures");
             </p>
         </div>
     </article>
+    <input type="radio" name="boite-modale" class="boite-modale__checkbox" id="boite-modale-fermer">
 
 </div>
