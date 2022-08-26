@@ -22,7 +22,7 @@ $nombreHeures = get_field("nombre_dheures");
     <label class="button" for="boite-modale<?= $idArticle ?>"><?= substr($titre, 0, 8) ?></label>
 
     <footer>
-        departement: <?php echo $departement; ?>
+        <?php echo $departement; ?>
     </footer>
 
     <input type="radio" name="boite-modale" class="boite-modale__checkbox" id="boite-modale<?= $idArticle; ?>">
