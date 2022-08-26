@@ -1,7 +1,7 @@
 <?php
 $idArticle = get_the_id();
 $descCours  = get_the_content();
-$departement = get_field("departement");
+$departement = "Département TIM";
 $titre = get_the_title();
 $nombreHeures = get_field("nombre_dheures");
 ?>
