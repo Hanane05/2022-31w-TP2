@@ -2,7 +2,7 @@
 ## Développer un site constitué de plusieurs modèles, gabarits de modèle et modèle de page «template»
 ## utilisant les champs personnalisés et plusieurs animations/transitions Javascript/CSS
 ### Contient  commits
-### Site: https://eddy
+### Github Page: https://hanane05.github.io/2022-31w-TP2/
 
 > Le theme contient le dossier suivant:
 
